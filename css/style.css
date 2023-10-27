@@ -179,13 +179,22 @@ button {
 
 /*? main */
 
-.hero{
-    margin-top: 52px;
+.hero {
+  margin-top: 52px;
 }
 
-.explore {
-    
+.explore-title {
+  background: rgba(79, 70, 78, 0.35);
+  backdrop-filter: blur(15px);
+  background: linear-gradient(
+      180deg,
+      #1c121f 9.98%,
+      rgba(28, 18, 31, 0.21) 81.39%
+    ),
+    url(../images/title-phone.jpg),
+    lightgray -342.571px 0px / 282.971% 183.129% no-repeat;
 }
+/* ../images/title-phone.jpg */
 
 .explore-title {
   color: #f5fbf2;
@@ -193,8 +202,38 @@ button {
   font-family: Oxanium;
   font-size: 42px;
   line-height: 1.5;
+  position: relative;
 }
 
 .span-title {
   color: #ffce4e;
+}
+
+.title-button {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button-explore {
+  color: #16091b;
+  font-family: Work Sans;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  width: 155px;
+  height: 54px;
+  background: #ffce4e;
+}
+
+.button-create {
+  color: #f5fbf2;
+  font-family: Work Sans;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  width: 155px;
+  height: 54px;
+  border: 1px solid var(--Primary-color, #ffce4e);
+  background: #594846;
 }
